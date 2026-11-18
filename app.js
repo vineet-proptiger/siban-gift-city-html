@@ -1,5 +1,5 @@
 /* ===============================================================
-   BARCA AT GODREJ MSR CITY — JAVASCRIPT UI ENGINE
+   SIBAN GIFT CITY — JAVASCRIPT UI ENGINE
 =============================================================== */
 
 // ── 1. Hero Concept 3: Horizontal Scroll/Swipe & Auto-Slide Engine ──

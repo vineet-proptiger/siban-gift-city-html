@@ -580,6 +580,22 @@
   }
 }
 
+/* Keep the footer flush with the mobile sticky action bar. */
+@media (max-width: 1023px) {
+  html,
+  body {
+    background: #111111;
+    padding-bottom: 0 !important;
+  }
+
+  footer {
+    min-height: calc(100vh - 68px) !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 5rem !important;
+    box-sizing: border-box;
+  }
+}
+
 /* ─── Sipani City Hero Styles ─────────────────────────────────── */
 .hero-section {
   font-family: var(--font-poppins), 'Poppins', sans-serif;

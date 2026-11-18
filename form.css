@@ -177,7 +177,7 @@
     display: flex;
   }
   body {
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 }
 .mobile-cta .cta {
