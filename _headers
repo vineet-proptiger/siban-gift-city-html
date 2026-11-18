@@ -1,0 +1,29 @@
+# ═══════════════════════════════════════════════════
+# CLOUDFLARE PAGES HTTP CACHE-CONTROL HEADERS
+# ═══════════════════════════════════════════════════
+
+# Only Images Cached (7 Days Browser Cache + Stale-While-Revalidate)
+/images/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/favicon/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+# Remove Cache for Everything Else (CSS, JS, Fonts, HTML)
+/css/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/fonts/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/*.css
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/*.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/
+  Cache-Control: no-cache, no-store, must-revalidate

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barcaatgodrejmsrcity.co.in/sitemap.xml
