@@ -529,6 +529,7 @@
   z-index: 999;
   display: flex;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .sticky-bottom-bar .phone-icon-wrap {
@@ -580,19 +581,10 @@
   }
 }
 
-/* Keep the footer flush with the mobile sticky action bar. */
+/* Ensure footer has comfortable clearance above mobile sticky action bar */
 @media (max-width: 1023px) {
-  html,
-  body {
-    background: #111111;
-    padding-bottom: 0 !important;
-  }
-
   footer {
-    min-height: calc(100vh - 68px) !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 5rem !important;
-    box-sizing: border-box;
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)) !important;
   }
 }
 
